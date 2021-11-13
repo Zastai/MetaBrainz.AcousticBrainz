@@ -1,15 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Support Files", "Support Files", "{F997B31A-CF25-4C63-BEB5-172F7E13D9B3}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
+		build-package.ps1 = build-package.ps1
 		Directory.Packages.props = Directory.Packages.props
 		global.json = global.json
+		LICENSE.md = LICENSE.md
+		package-icon.png = package-icon.png
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{9DF148E0-0CD0-4435-942D-C0B99DF87025}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\github-labels.yml = .github\github-labels.yml
+		.github\release-drafter.yml = .github\release-drafter.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{33D2A3AE-AD59-42AF-84B2-C83B849A0AFB}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\release-drafter.yml = .github\workflows\release-drafter.yml
+		.github\workflows\update-labels.yml = .github\workflows\update-labels.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaBrainz.AcousticBrainz", "MetaBrainz.AcousticBrainz\MetaBrainz.AcousticBrainz.csproj", "{C5F77B03-F56C-42E1-9497-ACD011641D18}"
@@ -27,6 +45,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DF148E0-0CD0-4435-942D-C0B99DF87025} = {F997B31A-CF25-4C63-BEB5-172F7E13D9B3}
+		{33D2A3AE-AD59-42AF-84B2-C83B849A0AFB} = {9DF148E0-0CD0-4435-942D-C0B99DF87025}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C608A97F-0C55-4B8E-8157-671C8BC67CD7}
