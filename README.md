@@ -1,5 +1,8 @@
 # MetaBrainz.AcousticBrainz [![Build Status][CI-S]][CI-L] [![NuGet Package Version][NuGet-S]][NuGet-L]
 
+_The AcousticBrainz project was halted in 2022; this repository will be
+archived until such time as that changes._
+
 This is a library providing access to the
 [AcousticBrainz API v1][api-reference].
 
